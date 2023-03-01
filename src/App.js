@@ -1,8 +1,7 @@
 import './styles/App.css'
 import Navbar from './Navbar';
-import About from './components/About';
 import Contact from './components/Contact';
-import Project from './components/Project';
+import Project from './Project';
 import Home from './Home';
 import { BrowserRouter,Route,Routes} from "react-router-dom";
 function App() {
