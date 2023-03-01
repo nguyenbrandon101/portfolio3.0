@@ -10,6 +10,18 @@ const Home = () => {
                     My name is <span>Brandon.</span>
                 </div>
                 <p>I'm a Software Developer based in the Bay Area. As an software developer, my mission is to create a digital experience that users will love to use while also learning new skills to help further perfect my craft!</p>
+                <p>Having a background in Economics and Data Science, I started to explore more about web development after graduating from college in which I taught myself how to code in React. Eversince then, I have been building apps to further improve and learn more about web development in which you can see these projects in the projects page!</p>
+                <p>Here are some of the few tech stacks that I've been working with recently:</p>
+                <div className='list'>
+                  <ul>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                  </ul>
+                </div>
                 <button className='connect' onClick={() => window.location = 'mailto:bran.nguyen1118@gmail.com'}> Connect with me!</button>
               </div>
           </div>

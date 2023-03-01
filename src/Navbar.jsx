@@ -22,7 +22,6 @@ const Navbar = () => {
       <label for="toggle" className='hamburger'></label>
       <div class="topnav">
         <h1 onClick={homeScreen} className='logo'>BNguyen</h1>
-        <Link className="nav-items" to='/about'>About Me</Link>
         <Link className="nav-items" to='/proj'>Projects</Link>
         <Link className="nav-items" to='/contact'>Contact Me</Link>
         <div className='dot'></div>
@@ -45,8 +44,7 @@ const Navbar = () => {
               <h1>BNguyen</h1>
             </div>
             <div class="menu-items">
-            <Link className="nav-items" to="/">Home</Link>
-              <Link className="nav-items" to='/about'>About Me</Link>
+              <Link className="nav-items" to="/">Home</Link>
               <Link className="nav-items" to='/proj'>Projects</Link>
               <Link className="nav-items" to='/contact'>Contact Me</Link>
               <Link className="nav-items">Resume</Link>

@@ -101,7 +101,7 @@ button:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.topnav a:nth-child(2):hover ~ .dot {
+.topnav a:nth-child(1):hover ~ .dot {
   -webkit-transform: translateX(-29.5rem);
   transform: translateX(-29.5rem);
   -webkit-transition: all 0.2s ease-in-out;
@@ -109,7 +109,7 @@ button:hover {
   opacity: 1;
 }
 
-.topnav a:nth-child(3):hover ~ .dot {
+.topnav a:nth-child(2):hover ~ .dot {
   -webkit-transform: translateX(-19.25rem);
   transform: translateX(-19.25rem);
   -webkit-transition: all 0.2s ease-in-out;
@@ -117,7 +117,7 @@ button:hover {
   opacity: 1;
 }
 
-.topnav a:nth-child(4):hover ~ .dot {
+.topnav a:nth-child(3):hover ~ .dot {
   -webkit-transform: translateX(-8.5rem);
   transform: translateX(-8.5rem);
   -webkit-transition: all 0.2s ease-in-out;
@@ -131,6 +131,7 @@ button:hover {
   .container {
     width: 100%;
     margin: auto;
+    height: auto;
   }
   
   .navbar {
@@ -139,6 +140,7 @@ button:hover {
     background-color: rgb(24, 18, 37);
     color: white;
     display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
   }
@@ -292,6 +294,7 @@ button:hover {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    height: auto;
   }
 }
 .wrapper {
@@ -302,6 +305,38 @@ button:hover {
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (max-width: 941px) {
+  .wrapper {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 42rem;
+  }
+}
+
+.wrapper .list {
+  text-decoration: none;
+}
+
+.wrapper ul {
+  list-style-type: none;
+}
+
+.wrapper ul li {
+  width: 50%;
+  display: inline-block;
+}
+.wrapper ul li::before {
+  display: inline-block;
+  position: relative;
+  right: 1rem;
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #2c90fc;
+}
+
 
 .home-contents {
   margin-left: 2rem;
@@ -318,8 +353,15 @@ button:hover {
 }
 @media screen and (max-width: 941px) {
   .img{
-    margin-bottom:-20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25rem;
+    height: auto;
     width: 100%;
+
   }
 }
 
@@ -490,6 +532,16 @@ button:hover {
   width: 100vw;
 }
 
+@media screen and (max-width: 941px) {
+  .copyright {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 88rem;
+  }
+}
+
 .center {
   display: table;
   width: 100%;
@@ -513,9 +565,11 @@ button:hover {
 .social a {
   text-decoration: none;
   color: white;
+  position: relative;
 }
 .social a:hover {
   color: #2c90fc;
+  top:-4px;
 }
 
 
