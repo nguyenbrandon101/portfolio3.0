@@ -27,6 +27,7 @@ const Project = () => {
               <br></br>
               A todo list app that allows the user to organize their task for the day. Incoporated a weather API to also display the weather of any city. Used Node.js and Express.js to create a back-end server that connects with MongoDB to store data.
             </div>
+            <a href='https://github.com/nguyenbrandon101/todoapp-version2.0'><img src={require('./github.png')} className="git-3"/></a>
           </div>
         </div>
         <div className='proj'>
@@ -38,6 +39,7 @@ const Project = () => {
               <br></br>
               A todo list app that allows the user to organize their task for the day. Users can categorize their task into either business or personal.
             </div>
+            <a href='https://github.com/nguyenbrandon101/Todo-List-Version1.0'><img src={require('./github.png')} className="git-2"/></a>
           </div>
         </div>
         <div className='proj'>

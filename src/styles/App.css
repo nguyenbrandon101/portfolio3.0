@@ -19,7 +19,7 @@
   background-color: #2d2344;
   color: white;
   width: 100vw;
-  height: 12vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -136,7 +136,7 @@ button:hover {
   
   .navbar {
     width: 100%;
-    height: 9vh;
+    height: auto;
     background-color: #2b2141;
     color: white;
     display: flex;
@@ -298,7 +298,7 @@ button:hover {
   }
 }
 .wrapper {
-  height: 80vh;
+  height: auto;
   min-width: 45%;
   /*This part is important for centering*/
   display: flex;
@@ -583,11 +583,12 @@ button:hover {
 /*Projects*/
 .parent-proj-border {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: absolute;
 }
 
 .grid-layout {
@@ -635,6 +636,23 @@ button:hover {
   border: none;
 }
 
+.descp .git-2 {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 0.7rem;
+  left: 16rem;
+  border: none;
+}
+
+.descp .git-3 {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 16rem;
+  border: none;
+}
+
 .descp span {
   font-size: 1.5rem;
   display: inline-block;
@@ -658,8 +676,193 @@ button:hover {
   margin-bottom: 1rem
 }
 
+@media screen and (max-width: 1310px) {
+  .grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: space-evenly;
+  }
+  .parent-proj-border {
+    display: flex;
+    position: absolute;
+    top: 9rem;
+    height: auto;
+  }
 
+}
 
+@media screen and (max-width: 800px) {
+  .grid-layout {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
+  .proj .top {
+    height: 51%;
+    width:350px;
+
+  }
   
+  .proj .descp {
+    height: 49%;
+    width:350px;
+  }
+}
+
+/*Contact page*/
+
+#Contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+@media screen and (max-width: 941px) {
+  #Contact {
+    position: absolute;
+    height: auto;
+    top: 10rem;
+  }
+}
+
+.contact-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  border: 5px solid #372a50;
+  border-radius: 5px;
+}
+
+.contact-sec h2 {
+  color:#1af4fb;
+  font-size: 45px;
+}
+.contact-sec h3 {
+  font-size: 55px;
+  color:#2c90fc;
+}
+.contact-sec p {
+  width: 500px;
+  color: white;
+  font-size: 25px;
   
+}
+
+.contact-sec a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid #372a50;;
+  border-radius: 5px;
+  height: 25px;
+  width: 150px;
+  background-color: transparent;
+  color:#2c90fc;
+  font-size: 20px;
+}
+
+.contact-sec a:hover {
+  color: white;
+}
+
+.contact-sec a span:hover {
+  color: white;
+}
+
+/* Social Side Bars */
+
+  [class^="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  }
+  #social-sidebar {
+  top: 60%;
+  }
+  #social-sidebar li:first-child a { border-top-right-radius: 5px; }
+  #social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
+  
+  #social-sidebar {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  #social-sidebar a {
+  background: white 1;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  width: 50px;
+  margin: 0.3rem;
+  font-size: 24px;
+  line-height: 50px;
+  cursor: pointer;
+  position: relative;
+  right: 1.3rem;
+  }
+ 
+  #social-sidebar a span {
+  font: 12px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  /* shape of the border of th side bars */
+  border-radius: 30px;
+  line-height: 24px;
+  left: -200%;
+  margin-top: -30%;
+  opacity: 0;
+  padding: 4px 8px;
+  position: absolute;
+  transition: opacity .3s, left .4s;
+  top: 50%;
+  z-index: -1;
+  }
+   
+   
+  #social-sidebar a[class*="linkedin"]:hover,
+  #social-sidebar a[class*="linkedin"] span,
+  #social-sidebar a[class*="linkedin"] span:before {background: #00aced;}
+   
+   
+  #social-sidebar a[class*="gplus"]:hover,
+  #social-sidebar a[class*="gplus"] span,
+  #social-sidebar a[class*="gplus"] span:before {background: #E34429;}
+   
+   
+  #social-sidebar a[class*="github"]:hover,
+  #social-sidebar a[class*="github"] span,
+  #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+  
+  #social-sidebar a[class*="insta"]:hover,
+  #social-sidebar a[class*="insta"] span,
+  #social-sidebar a[class*="insta"] span:before {background: #ea4c89;}
+  
+  /* Add icon that you want, the content code is available in the demo above*/
+  
+  .entypo-linkedin:before {
+  content: '\f318';
+  }
+  
+  .entypo-gplus:before {
+  content: '\2709';
+  }
+  .entypo-github:before {
+  content: '\f300';
+  }
+  .entypo-insta:before {
+  content: '\f32d';
+  }
+  @font-face {
+  font-family: 'entypo';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://weloveiconfonts.com/api/fonts/entypo/entypo.eot');
+  src: url('https://weloveiconfonts.com/api/fonts/entypo/entypo.eot?#iefix') format('eot'),
+  url('https://weloveiconfonts.com/api/fonts/entypo/entypo.woff') format('woff'),
+  url('https://weloveiconfonts.com/api/fonts/entypo/entypo.ttf') format('truetype'),
+  url('https://weloveiconfonts.com/api/fonts/entypo/entypo.svg#entypo') format('svg');
+  }

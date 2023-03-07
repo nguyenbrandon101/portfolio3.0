@@ -47,7 +47,7 @@ const Navbar = () => {
               <Link className="nav-items" to="/">Home</Link>
               <Link className="nav-items" to='/proj'>Projects</Link>
               <Link className="nav-items" to='/contact'>Contact Me</Link>
-              <Link className="nav-items">Resume</Link>
+              <a href={require("./resume.pdf")} target="_blank" className='but-res'>Resume</a>
             </div>
           </div>
         </div>
